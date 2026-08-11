@@ -1,0 +1,36 @@
+[build-system]
+requires = ["hatchling>=1.25"]
+build-backend = "hatchling.build"
+
+[project]
+name = "agent-repo-guard"
+version = "0.1.0"
+description = "A security linter for AI agent instructions and repository automation."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [
+  { name = "Serina James" }
+]
+keywords = ["security", "ai-agents", "github-actions", "sarif", "supply-chain"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Environment :: Console",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "Topic :: Security",
+  "Topic :: Software Development :: Quality Assurance",
+]
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/hejr/agent-repo-guard"
+Issues = "https://github.com/hejr/agent-repo-guard/issues"
+Repository = "https://github.com/hejr/agent-repo-guard"
+
+[project.scripts]
+agent-repo-guard = "agent_repo_guard.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/agent_repo_guard"]

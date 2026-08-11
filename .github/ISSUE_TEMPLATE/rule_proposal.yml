@@ -1,0 +1,29 @@
+name: Rule proposal
+description: Propose a narrowly scoped, explainable security check.
+title: "[Rule]: "
+labels: [enhancement, rule]
+body:
+  - type: textarea
+    id: threat
+    attributes:
+      label: Threat and trust boundary
+    validations:
+      required: true
+  - type: textarea
+    id: positive
+    attributes:
+      label: Synthetic positive example
+    validations:
+      required: true
+  - type: textarea
+    id: negative
+    attributes:
+      label: Synthetic safe example
+    validations:
+      required: true
+  - type: textarea
+    id: remediation
+    attributes:
+      label: Actionable remediation
+    validations:
+      required: true

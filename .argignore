@@ -1,0 +1,2 @@
+# Generated reports should not be scanned as repository source.
+agent-repo-guard.sarif
